@@ -1,0 +1,11 @@
+# Get all contacts (localhost)
+GET http://localhost:3000/users
+
+# Get single contact by ID (localhost)
+GET http://localhost:3000/users/66ee7858f58f33e278c91750
+
+# Get all contacts (published link)
+GET https://cse341-sc1n.onrender.com/users
+
+# Get single contact by ID (published link)
+GET https://cse341-sc1n.onrender.com/users/66ee7858f58f33e278c91750
