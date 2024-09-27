@@ -9,3 +9,38 @@ GET https://cse341-sc1n.onrender.com/users
 
 # Get single contact by ID (published link)
 GET https://cse341-sc1n.onrender.com/users/66ee7858f58f33e278c91750
+
+### Create User
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Pedro",
+  "lastName": "Pepe",
+  "email": "pedro@example.com",
+  "favoriteColor": "rojo",
+  "birthday": "1990-05-15"
+}
+
+### Update User
+PUT http://localhost:3000/users/66ee7b38f58f33e278c91755 HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "pedro",
+  "lastName": "pepe",
+  "email": "pedro@example.com",
+  "favoriteColor": "rojo",
+  "birthday": "1990-05-15"
+}
+
+### Delete User
+DELETE http://localhost:3000/users/66f6b86fce001a8285fda01f
+
+### Swagger Local Host
+
+http://localhost:3000/users/api-docs/
+
+### Render Swagger
+
+https://cse341-sc1n.onrender.com/api-docs/
